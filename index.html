@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="fuente.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="caja">
+        <h1><img src="img/modem.png" class="modem"></h1>
+    </div>
+  </header>
+  
+    <div class="container">
+        <form>
+          <label for="input-text">Ingresa el tu CM a convertir</label>
+          <input type="text" id="input-text" name="input-text" placeholder="Escribe algo...">
+          <button type="button" onclick="convertText()">Convertir</button>
+        </form>
+        
+        <div class="containersalida">
+            <div class="output" id="output">Texto de ejemplo</div>
+            <button class="copy-button" id="copy-button" onclick="copyToClipboard()">Copiar</button>
+          </div>
+          
+      </div>
+      <footer>
+        <p class="copyright">&copy Alex.G - 2023</p>
+    </footer>
+      
+</body>
+</html>

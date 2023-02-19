@@ -1,0 +1,139 @@
+
+body {
+  background-color: rgb(9, 16, 59);
+  display: grid;
+  align-content: center;
+  justify-content: space-evenly;
+  
+}
+header {
+  padding: 20px 0;
+}
+.caja{
+ 
+  position: relative;
+  margin: 0 auto;
+}
+.modem{
+  width: 100px;
+  display: block;
+  margin: 50px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.containersalida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label, input, button {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  width: 100%;
+}
+.output{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #177a1a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #37973b;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.output {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.copy-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f8a27;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  opacity: 0.8;
+}
+
+.copy-button:active {
+  opacity: 0.6;
+}
+
+.copied {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.copied:before {
+  content: "¡Copiado correctamente!";
+  position: absolute;
+  opacity: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.copied:hover:before {
+  opacity: 1;
+}
+
+.copied:active:before {
+  opacity: 0.6;
+}
+p{
+  text-align: center;
+}
+.copyright{
+  color:white;
+  font-size: 13px;
+  margin:20px;
+}
