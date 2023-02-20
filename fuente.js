@@ -1,6 +1,12 @@
 function convertText() {
-  const inputText = document.getElementById("input-text").value;
-  const outputText = inputText.toUpperCase().split("").join(":");
+ const inputText = document.getElementById("input-text").value;
+  let outputText = "";
+  for (let i = 0; i < inputText.length; i++) {
+    if (i > 0 && i % 2 == 0) {
+      outputText += ":";
+    }
+    outputText += inputText[i].toUpperCase();
+  }
   document.getElementById("output").textContent = outputText;
 }
 
